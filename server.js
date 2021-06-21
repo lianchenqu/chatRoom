@@ -46,7 +46,7 @@ function serveStatic(response, cache, absPath) {//提供静态文件服务
 var server = http.createServer(function (request, reponse) {//创建HTTP服务器,使用匿名函数定义对每个请求的处理行为
     var filePath = false;
     if (request.url == '/') {
-        filePath = 'public/index.html';//确定返回的默认HTML文件
+        filePath = 'public/index.html';//·��
     } else {
         filePath = 'public' + request.url;//将URL路径转为文件的相对路径
     }
